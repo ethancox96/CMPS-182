@@ -1,0 +1,29 @@
+INSERT INTO TICKETS VALUES(300018, 200014, 10008, '2014-04-07', '100 Key West', 'Parking', 70.00, false);
+
+INSERT INTO VEHICLES VALUES(200029, 'VW BEETLE', 1995, 'BLU', 10021, '2011-01-12', 'AAA', true);
+
+INSERT INTO Tickets VALUES(300018, 200013, 10009, '2017-04-07', '100 Key East', 'Parking', 70.02, false);
+
+UPDATE DRIVERS
+SET LicenseClass = 'A'
+WHERE name = 'Jacky Brown';
+
+UPDATE DRIVERS
+SET LicenseClass = 'D'
+WHERE name = 'Jane Smith';
+
+UPDATE TICKETS
+SET Fee = 50.00
+WHERE ticketid = 3000012;
+
+UPDATE TICKETS
+SET Fee = -1.00
+WHERE ticketid = 3000013;
+
+UPDATE VEHICLES
+SET inUse = false, RegExpireDate  = NULL
+WHERE vin = 200006;
+
+UPDATE VEHICLES
+SET inUse = true, RegExpireDate  = NULL
+WHERE vin = 200007;
